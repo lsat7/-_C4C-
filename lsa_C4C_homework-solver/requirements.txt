@@ -1,0 +1,19 @@
+# Core dependencies (required)
+sympy>=1.12
+pyyaml>=6.0
+
+# Extended format support (C4C 扩展：PDF / Word 摄入)
+pdfplumber>=0.9            # PDF text extraction
+python-docx>=0.8           # Word document parsing
+# pytesseract>=0.3         # OCR for scanned PDFs（可选，需本机安装 Tesseract）
+# Pillow>=10.0             # Image processing（可选）
+
+# 国产大模型 LLM 引擎（可选——不装也能跑，自动降级离线模板）
+# 无需 openai SDK：llm_solver.py 仅用标准库 urllib 调用 OpenAI 兼容接口
+# Qwen:   export DASHSCOPE_API_KEY=sk-xxx   https://dashscope.aliyuncs.com
+# Kimi:   export MOONSHOT_API_KEY=sk-xxx    https://api.moonshot.cn
+
+# Chinese PDF output（中文排版）
+# 需要 XeLaTeX（Windows 推荐 MiKTeX：https://miktex.org/download）
+# 首次编译需安装 ctex 宏包：mpm --install=ctex（MiKTeX 会自动提示）
+# Compile: xelatex -interaction=nonstopmode your_file.tex

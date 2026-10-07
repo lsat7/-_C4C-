@@ -1,0 +1,218 @@
+[
+  {
+    "problem_id": "1",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "5/2 - sqrt(33)/2": 1.1818212630765742e-125,
+          "5/2 + sqrt(33)/2": -1.210184973390412e-122
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "2",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "5/2 - sqrt(33)/2": 1.1818212630765742e-125,
+          "5/2 + sqrt(33)/2": -1.210184973390412e-122
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "3",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "5/2 - sqrt(17)/2": -4.727285052306297e-125,
+          "sqrt(17)/2 + 5/2": 9.681479787123296e-122
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "4",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "error",
+        "note": "Cannot convert complex to float"
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "5",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "5 - sqrt(15)": 2.3636425261531484e-125,
+          "sqrt(15) + 5": -1.9362959574246591e-121
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "6",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "3": 0.0,
+          "1": 0.0
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "7",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "1": 0.0,
+          "3": 0.0
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "8",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "error",
+        "note": "Matrix size mismatch: (2, 3) + (2, 2)."
+      },
+      {
+        "check": "inverse",
+        "status": "skip"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "9",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "skip"
+      },
+      {
+        "check": "inverse",
+        "status": "skip"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "10",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "skip"
+      },
+      {
+        "check": "inverse",
+        "status": "skip"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  }
+]

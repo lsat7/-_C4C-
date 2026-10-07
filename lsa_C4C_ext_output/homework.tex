@@ -1,0 +1,143 @@
+\documentclass[12pt, a4paper]{ctexart}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{微分方程与大学物理}
+\lhead{lsa}
+\rfoot{Page \thepage}
+
+\newcommand{\problem}[1]{\subsection*{Problem #1}}
+\newcommand{\solution}{\paragraph{Solution.}}
+
+\definecolor{solutioncolor}{RGB}{0, 100, 0}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries 扩展领域测试 解答} \\[0.5em]
+    {\large 微分方程与大学物理} \\[0.3em]
+    lsa \quad | \quad 2026-10-07
+\end{center}
+
+\hrule
+\vspace{1em}
+\problem{1}
+
+求解一阶线性微分方程：$y' + 2y = e^{-x}$。
+
+\solution
+
+微分方程：$2 y{\left(x \right)} + \frac{d}{d x} y{\left(x \right)} = e^{- x}$
+
+通解：$y{\left(x \right)} = \left(C_{1} e^{- x} + 1\right) e^{- x}$
+
+\textbf{Answer:}
+\[\boxed{\left(C_{1} e^{- x} + 1\right) e^{- x}}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{2}
+
+求解二阶常系数齐次微分方程：$y'' + y = 0$。
+
+\solution
+
+微分方程：$y{\left(x \right)} + \frac{d^{2}}{d x^{2}} y{\left(x \right)} = 0$
+
+通解：$y{\left(x \right)} = C_{1} \sin{\left(x \right)} + C_{2} \cos{\left(x \right)}$
+
+\textbf{Answer:}
+\[\boxed{C_{1} \sin{\left(x \right)} + C_{2} \cos{\left(x \right)}}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{3}
+
+求解一阶微分方程：$y' + y = x$。
+
+\solution
+
+微分方程：$y{\left(x \right)} + \frac{d}{d x} y{\left(x \right)} = x$
+
+通解：$y{\left(x \right)} = C_{1} e^{- x} + x - 1$
+
+\textbf{Answer:}
+\[\boxed{C_{1} e^{- x} + x - 1}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{4}
+
+质量为 $2$ kg 的物体受到 $F = 10$ N 的力，求其加速度 $a$。（牛顿第二定律）
+
+\solution
+
+$F = ma \Rightarrow a = F/m$
+
+$F = 10,\; m = 2$
+
+$a = 5$ m/s²
+
+\textbf{Answer:}
+\[\boxed{5}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{5}
+
+两个点电荷 $q_1 = 2 \times 10^{-6}$ C 与 $q_2 = 3 \times 10^{-6}$ C 相距 $r = 0.1$ m，求库仑力 $F$。
+
+\solution
+
+库仑定律：$F = k \frac{q_1 q_2}{r^2}$，$k = 9\times 10^9$ N·m²/C²
+
+$q_1 = \frac{1}{500000},\; q_2 = \frac{3}{1000000},\; r = 0.1$
+
+$F = 5.4$ N
+
+\textbf{Answer:}
+\[\boxed{5.4}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{6}
+
+物体从高度 $h = 20$ m 处自由落体，求落地时间 $t$（取 $g = 9.8$ m/s²）。
+
+\solution
+
+自由落体：$h = \frac{1}{2} g t^2 \Rightarrow t = \sqrt{2h/g}$
+
+$h = 20,\; g = \frac{49}{5}$
+
+$t = \frac{10 \sqrt{2}}{7}$ s
+
+\textbf{Answer:}
+\[\boxed{\frac{10 \sqrt{2}}{7}}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+
+\vspace{2em}
+\noindent\textit{Auto-generated: 6/6 problems solved by SymPy.}
+\end{document}

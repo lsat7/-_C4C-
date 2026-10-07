@@ -1,0 +1,94 @@
+\documentclass[12pt, a4paper]{ctexart}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{证明与概念题}
+\lhead{lsa}
+\rfoot{Page \thepage}
+
+\newcommand{\problem}[1]{\subsection*{Problem #1}}
+\newcommand{\solution}{\paragraph{Solution.}}
+
+\definecolor{solutioncolor}{RGB}{0, 100, 0}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries 推理类题目测试解答} \\[0.5em]
+    {\large 证明与概念题} \\[0.3em]
+    lsa \quad | \quad 2026-10-07
+\end{center}
+
+\hrule
+\vspace{1em}
+\problem{1}
+
+证明：若函数 $f$ 在 $x=a$ 处可导，则 $f$ 在 $x=a$ 处连续。
+
+\solution
+
+由可导定义：$f'(a) = \lim_{x\to a}\frac{f(x)-f(a)}{x-a}$ 存在。
+
+于是 $\lim_{x\to a}[f(x)-f(a)] = \lim_{x\to a}\frac{f(x)-f(a)}{x-a}\cdot(x-a) = f'(a)\cdot 0 = 0$。
+
+故 $\lim_{x\to a}f(x)=f(a)$，即 $f$ 在 $x=a$ 处连续。
+
+反例说明逆命题不成立：$f(x)=|x|$ 在 $x=0$ 连续但不可导（尖点）。
+
+\textbf{Answer:}
+\[\boxed{\text{可导} \implies \text{连续（反之不成立）}}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{2}
+
+证明：$\sqrt{2}$ 是无理数。
+
+\solution
+
+反证法：设 $\sqrt{2}=p/q$（$p,q$ 为互素的正整数）。
+
+平方得 $p^2 = 2q^2$，故 $p^2$ 为偶数，从而 $p$ 为偶数，设 $p=2k$。
+
+代入得 $4k^2 = 2q^2 \Rightarrow q^2 = 2k^2$，故 $q$ 也为偶数。
+
+$p,q$ 都为偶数，与互素矛盾。故 $\sqrt{2}$ 是无理数。∎
+
+\textbf{Answer:}
+\[\boxed{\sqrt{2} \text{ 是无理数}}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+\problem{3}
+
+证明：对任意实数 $a$、$b$，有 $(a+b)^2 = a^2 + 2ab + b^2$。
+
+\solution
+
+左边展开：$(a+b)^2 = (a+b)(a+b)$。
+
+分配律：$= a^2 + ab + ba + b^2 = a^2 + 2ab + b^2$。
+
+\textbf{Answer:}
+\[\boxed{(a+b)^2 = a^2 + 2ab + b^2}\]
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+
+\vspace{2em}
+\noindent\textit{Auto-generated: 3/3 problems solved by SymPy.}
+\end{document}

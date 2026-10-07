@@ -1,0 +1,137 @@
+[
+  {
+    "problem_id": "1",
+    "problem_text": "计算矩阵的和 $A + B$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "$A = \\left[\\begin{matrix}1 & 2\\\\3 & 4\\end{matrix}\\right],\\quad B = \\left[\\begin{matrix}5 & 6\\\\7 & 8\\end{matrix}\\right]$",
+      "$A + B = \\left[\\begin{matrix}6 & 8\\\\10 & 12\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[6, 8], [10, 12]])",
+    "answer_latex": "\\left[\\begin{matrix}6 & 8\\\\10 & 12\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "2",
+    "problem_text": "计算矩阵乘积 $AB$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "$A = \\left[\\begin{matrix}1 & 2\\\\3 & 4\\end{matrix}\\right],\\quad B = \\left[\\begin{matrix}2 & 0\\\\1 & 2\\end{matrix}\\right]$",
+      "$AB = \\left[\\begin{matrix}4 & 4\\\\10 & 8\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[4, 4], [10, 8]])",
+    "answer_latex": "\\left[\\begin{matrix}4 & 4\\\\10 & 8\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "3",
+    "problem_text": "求二阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 3 & 1 \\\\ 4 & 2 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "矩阵 $A = \\left[\\begin{matrix}3 & 1\\\\4 & 2\\end{matrix}\\right]$",
+      "行列式 $\\det(A) = 2$"
+    ],
+    "answer": "2",
+    "answer_latex": "2",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "4",
+    "problem_text": "求三阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 5 & 6 & 0 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "矩阵 $A = \\left[\\begin{matrix}1 & 2 & 3\\\\0 & 1 & 4\\\\5 & 6 & 0\\end{matrix}\\right]$",
+      "行列式 $\\det(A) = 1$"
+    ],
+    "answer": "1",
+    "answer_latex": "1",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "5",
+    "problem_text": "求矩阵 $A$ 的逆矩阵 $A^{-1}$，其中\n\n$$A = \\begin{pmatrix} 4 & 7 \\\\ 2 & 6 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "矩阵 $A = \\left[\\begin{matrix}4 & 7\\\\2 & 6\\end{matrix}\\right]$",
+      "$\\det(A) = 10 \\neq 0$，故可逆",
+      "$A^{-1} = \\left[\\begin{matrix}\\frac{3}{5} & - \\frac{7}{10}\\\\- \\frac{1}{5} & \\frac{2}{5}\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[3/5, -7/10], [-1/5, 2/5]])",
+    "answer_latex": "\\left[\\begin{matrix}\\frac{3}{5} & - \\frac{7}{10}\\\\- \\frac{1}{5} & \\frac{2}{5}\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "6",
+    "problem_text": "求矩阵 $A$ 的特征值，其中\n\n$$A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "矩阵 $A = \\left[\\begin{matrix}2 & 1\\\\1 & 2\\end{matrix}\\right]$",
+      "特征多项式：$\\det(A - \\lambda I) = 0$",
+      "特征值 $\\lambda = 1$（重数 1），特征向量 $v = \\left[\\begin{matrix}-1\\\\1\\end{matrix}\\right]$",
+      "特征值 $\\lambda = 3$（重数 1），特征向量 $v = \\left[\\begin{matrix}1\\\\1\\end{matrix}\\right]$"
+    ],
+    "answer": "\\lambda = 1,\\ \\lambda = 3",
+    "answer_latex": "\\lambda = 1,\\ \\lambda = 3",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "7",
+    "problem_text": "求矩阵 $A$ 的特征值与特征向量，其中\n\n$$A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "矩阵 $A = \\left[\\begin{matrix}1 & 0\\\\0 & 3\\end{matrix}\\right]$",
+      "特征多项式：$\\det(A - \\lambda I) = 0$",
+      "特征值 $\\lambda = 1$（重数 1），特征向量 $v = \\left[\\begin{matrix}1\\\\0\\end{matrix}\\right]$",
+      "特征值 $\\lambda = 3$（重数 1），特征向量 $v = \\left[\\begin{matrix}0\\\\1\\end{matrix}\\right]$"
+    ],
+    "answer": "\\lambda = 1,\\ \\lambda = 3",
+    "answer_latex": "\\lambda = 1,\\ \\lambda = 3",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "8",
+    "problem_text": "求矩阵 $A$ 的转置 $A^T$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}.$$",
+    "solved": true,
+    "steps": [
+      "$A = \\left[\\begin{matrix}1 & 2 & 3\\\\4 & 5 & 6\\end{matrix}\\right]$",
+      "$A^T = \\left[\\begin{matrix}1 & 4\\\\2 & 5\\\\3 & 6\\end{matrix}\\right]$"
+    ],
+    "answer": "Matrix([[1, 4], [2, 5], [3, 6]])",
+    "answer_latex": "\\left[\\begin{matrix}1 & 4\\\\2 & 5\\\\3 & 6\\end{matrix}\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "9",
+    "problem_text": "解线性方程组：$x + 2y = 5$，$3x - y = 1$。",
+    "solved": true,
+    "steps": [
+      "方程：$x + 2 y = 5$，$3 x - y = 1$",
+      "解：$\\left\\{\\left( 1, \\  2\\right)\\right\\}$"
+    ],
+    "answer": "\\left\\{\\left( 1, \\  2\\right)\\right\\}",
+    "answer_latex": "\\left\\{\\left( 1, \\  2\\right)\\right\\}",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "10",
+    "problem_text": "求向量 $u = (1, 2, 3)$ 与 $v = (4, 5, 6)$ 的点积 $u \\cdot v$。",
+    "solved": true,
+    "steps": [
+      "$u = \\left[\\begin{matrix}1\\\\2\\\\3\\end{matrix}\\right],\\; v = \\left[\\begin{matrix}4\\\\5\\\\6\\end{matrix}\\right]$",
+      "$u \\cdot v = 32$"
+    ],
+    "answer": "32",
+    "answer_latex": "32",
+    "solver": "sympy",
+    "sub_solutions": []
+  }
+]

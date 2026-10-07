@@ -1,0 +1,55 @@
+[
+  {
+    "problem_id": "Q1",
+    "type": "conceptual",
+    "checks": []
+  },
+  {
+    "problem_id": "Q2",
+    "type": "conceptual",
+    "checks": []
+  },
+  {
+    "problem_id": "P1",
+    "type": "epsilon_delta",
+    "checks": []
+  },
+  {
+    "problem_id": "P2",
+    "type": "epsilon_delta",
+    "checks": []
+  },
+  {
+    "problem_id": "P3",
+    "type": "epsilon_delta",
+    "checks": []
+  },
+  {
+    "problem_id": "P4",
+    "type": "epsilon_delta",
+    "checks": []
+  },
+  {
+    "problem_id": "AP1",
+    "type": "tangent",
+    "checks": []
+  },
+  {
+    "problem_id": "AP2",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "skip"
+      },
+      {
+        "check": "inverse",
+        "status": "skip"
+      },
+      {
+        "check": "linear_system",
+        "status": "skip"
+      }
+    ]
+  }
+]

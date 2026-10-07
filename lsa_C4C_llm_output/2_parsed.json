@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "text": "证明：若函数 $f$ 在 $x=a$ 处可导，则 $f$ 在 $x=a$ 处连续。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "f"
+      },
+      {
+        "type": "inline",
+        "latex": "x=a"
+      },
+      {
+        "type": "inline",
+        "latex": "f"
+      },
+      {
+        "type": "inline",
+        "latex": "x=a"
+      }
+    ],
+    "type": "proof",
+    "sub_problems": []
+  },
+  {
+    "id": "2",
+    "text": "证明：$\\sqrt{2}$ 是无理数。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "\\sqrt{2}"
+      }
+    ],
+    "type": "proof",
+    "sub_problems": []
+  },
+  {
+    "id": "3",
+    "text": "证明：对任意实数 $a$、$b$，有 $(a+b)^2 = a^2 + 2ab + b^2$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "a"
+      },
+      {
+        "type": "inline",
+        "latex": "b"
+      },
+      {
+        "type": "inline",
+        "latex": "(a+b)^2 = a^2 + 2ab + b^2"
+      }
+    ],
+    "type": "proof",
+    "sub_problems": []
+  }
+]

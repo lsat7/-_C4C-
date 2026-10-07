@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "text": "计算行列式 $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$ 的值。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "2",
+    "text": "解方程 $x^2 - 5x + 6 = 0$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "x^2 - 5x + 6 = 0"
+      }
+    ],
+    "type": "equation",
+    "sub_problems": []
+  }
+]

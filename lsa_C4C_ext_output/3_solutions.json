@@ -1,0 +1,83 @@
+[
+  {
+    "problem_id": "1",
+    "problem_text": "求解一阶线性微分方程：$y' + 2y = e^{-x}$。",
+    "solved": true,
+    "steps": [
+      "微分方程：$2 y{\\left(x \\right)} + \\frac{d}{d x} y{\\left(x \\right)} = e^{- x}$",
+      "通解：$y{\\left(x \\right)} = \\left(C_{1} e^{- x} + 1\\right) e^{- x}$"
+    ],
+    "answer": "\\left(C_{1} e^{- x} + 1\\right) e^{- x}",
+    "answer_latex": "\\left(C_{1} e^{- x} + 1\\right) e^{- x}",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "2",
+    "problem_text": "求解二阶常系数齐次微分方程：$y'' + y = 0$。",
+    "solved": true,
+    "steps": [
+      "微分方程：$y{\\left(x \\right)} + \\frac{d^{2}}{d x^{2}} y{\\left(x \\right)} = 0$",
+      "通解：$y{\\left(x \\right)} = C_{1} \\sin{\\left(x \\right)} + C_{2} \\cos{\\left(x \\right)}$"
+    ],
+    "answer": "C_{1} \\sin{\\left(x \\right)} + C_{2} \\cos{\\left(x \\right)}",
+    "answer_latex": "C_{1} \\sin{\\left(x \\right)} + C_{2} \\cos{\\left(x \\right)}",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "3",
+    "problem_text": "求解一阶微分方程：$y' + y = x$。",
+    "solved": true,
+    "steps": [
+      "微分方程：$y{\\left(x \\right)} + \\frac{d}{d x} y{\\left(x \\right)} = x$",
+      "通解：$y{\\left(x \\right)} = C_{1} e^{- x} + x - 1$"
+    ],
+    "answer": "C_{1} e^{- x} + x - 1",
+    "answer_latex": "C_{1} e^{- x} + x - 1",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "4",
+    "problem_text": "质量为 $2$ kg 的物体受到 $F = 10$ N 的力，求其加速度 $a$。（牛顿第二定律）",
+    "solved": true,
+    "steps": [
+      "$F = ma \\Rightarrow a = F/m$",
+      "$F = 10,\\; m = 2$",
+      "$a = 5$ m/s²"
+    ],
+    "answer": "5",
+    "answer_latex": "5",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "5",
+    "problem_text": "两个点电荷 $q_1 = 2 \\times 10^{-6}$ C 与 $q_2 = 3 \\times 10^{-6}$ C 相距 $r = 0.1$ m，求库仑力 $F$。",
+    "solved": true,
+    "steps": [
+      "库仑定律：$F = k \\frac{q_1 q_2}{r^2}$，$k = 9\\times 10^9$ N·m²/C²",
+      "$q_1 = \\frac{1}{500000},\\; q_2 = \\frac{3}{1000000},\\; r = 0.1$",
+      "$F = 5.4$ N"
+    ],
+    "answer": "5.4",
+    "answer_latex": "5.4",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "6",
+    "problem_text": "物体从高度 $h = 20$ m 处自由落体，求落地时间 $t$（取 $g = 9.8$ m/s²）。",
+    "solved": true,
+    "steps": [
+      "自由落体：$h = \\frac{1}{2} g t^2 \\Rightarrow t = \\sqrt{2h/g}$",
+      "$h = 20,\\; g = \\frac{49}{5}$",
+      "$t = \\frac{10 \\sqrt{2}}{7}$ s"
+    ],
+    "answer": "\\frac{10 \\sqrt{2}}{7}",
+    "answer_latex": "\\frac{10 \\sqrt{2}}{7}",
+    "solver": "sympy",
+    "sub_solutions": []
+  }
+]

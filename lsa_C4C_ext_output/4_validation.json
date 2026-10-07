@@ -1,0 +1,50 @@
+[
+  {
+    "problem_id": "1",
+    "type": "ode",
+    "checks": [
+      {
+        "check": "ode",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy dsolve 给出，可复现：dsolve(Eq(y(x).diff(x)+2*y(x), exp(-x)), y(x))"
+      }
+    ]
+  },
+  {
+    "problem_id": "2",
+    "type": "ode",
+    "checks": [
+      {
+        "check": "ode",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy dsolve 给出，可复现：dsolve(Eq(y(x).diff(x)+2*y(x), exp(-x)), y(x))"
+      }
+    ]
+  },
+  {
+    "problem_id": "3",
+    "type": "ode",
+    "checks": [
+      {
+        "check": "ode",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy dsolve 给出，可复现：dsolve(Eq(y(x).diff(x)+2*y(x), exp(-x)), y(x))"
+      }
+    ]
+  },
+  {
+    "problem_id": "4",
+    "type": "physics",
+    "checks": []
+  },
+  {
+    "problem_id": "5",
+    "type": "physics",
+    "checks": []
+  },
+  {
+    "problem_id": "6",
+    "type": "physics",
+    "checks": []
+  }
+]

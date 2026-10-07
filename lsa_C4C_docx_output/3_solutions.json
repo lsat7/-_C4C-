@@ -1,0 +1,28 @@
+[
+  {
+    "problem_id": "1",
+    "problem_text": "计算行列式 $A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$ 的值。",
+    "solved": true,
+    "steps": [
+      "矩阵 $A = \\left[\\begin{matrix}2 & 1\\\\1 & 2\\end{matrix}\\right]$",
+      "行列式 $\\det(A) = 3$"
+    ],
+    "answer": "3",
+    "answer_latex": "3",
+    "solver": "sympy",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "2",
+    "problem_text": "解方程 $x^2 - 5x + 6 = 0$。",
+    "solved": true,
+    "steps": [
+      "$x^{2} - 5 x + 6 = 0$",
+      "$x = \\left[ 2, \\  3\\right]$"
+    ],
+    "answer": "[2, 3]",
+    "answer_latex": "\\left[ 2, \\  3\\right]",
+    "solver": "sympy",
+    "sub_solutions": []
+  }
+]

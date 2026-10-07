@@ -1,0 +1,36 @@
+[
+  {
+    "problem_id": "1",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "pass",
+        "residuals": {
+          "3": 0.0,
+          "1": 0.0
+        }
+      },
+      {
+        "check": "inverse",
+        "status": "pass"
+      },
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  },
+  {
+    "problem_id": "2",
+    "type": "equation",
+    "checks": [
+      {
+        "check": "linear_system",
+        "status": "verified_by_sympy",
+        "note": "解由 SymPy linsolve 给出，可复现：linsolve(eqs, [x,y,z])"
+      }
+    ]
+  }
+]

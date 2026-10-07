@@ -1,0 +1,168 @@
+# ============================================================
+# T-box: Linear Algebra（线性代数）—— C4C 扩展领域
+# ============================================================
+# Oracle sources:
+#   - David C. Lay, Linear Algebra and Its Applications, Ch. 1–5
+#   - Gilbert Strang, Introduction to Linear Algebra, Ch. 1–6
+#
+# 本文件定义线性代数领域的本体：概念、求解方法、分类规则。
+# 求解实现见 scripts/solvers_extended.py 的 solve_matrix。
+# ============================================================
+
+domain: linear_algebra
+version: "1.0"
+
+oracle_sources:
+  - type: textbook
+    ref: "Lay, Linear Algebra and Its Applications, 5th ed."
+    authority: primary
+  - type: textbook
+    ref: "Strang, Introduction to Linear Algebra, 5th ed."
+    authority: primary
+    distilled_knowledge:
+      - "矩阵乘法的维度规则：(m×n)·(n×p) = (m×p)"
+      - "行列式几何意义：平行多面体有向体积"
+      - "det(A)≠0 ⟺ A 可逆 ⟺ 列向量线性无关 ⟺ 齐次方程仅有零解"
+      - "特征值方程：det(A-λI)=0，特征向量是 (A-λI)v=0 的非零解"
+      - "n×n 矩阵必有 n 个特征值（计重数，可含复数）"
+
+concepts:
+  - id: matrix_operations
+    type: concept
+    name: "矩阵运算（加/乘/转置/数乘）"
+    formal: "(A+B)_{ij}=a_{ij}+b_{ij}; (AB)_{ij}=Σ_k a_{ik}b_{kj}; (A^T)_{ij}=a_{ji}"
+    keywords: [matrix, addition, multiply, transpose]
+
+  - id: determinant
+    type: concept
+    name: "行列式"
+    formal: "det(A)，2×2: ad-bc"
+    keywords: [determinant, det]
+    sympy: "Matrix.det()"
+
+  - id: matrix_inverse
+    type: concept
+    name: "逆矩阵"
+    formal: "A^{-1} 满足 A·A^{-1}=I；存在 ⟺ det(A)≠0"
+    keywords: [inverse, invert, nonsingular]
+    sympy: "Matrix.inv()"
+
+  - id: linear_system
+    type: concept
+    name: "线性方程组"
+    formal: "Ax = b；高斯消元 / linsolve"
+    keywords: [solve system, linear system, gaussian]
+    sympy: "linsolve()"
+
+  - id: eigenvalues_eigenvectors
+    type: concept
+    name: "特征值与特征向量"
+    formal: "Av = λv；λ 是 det(A-λI)=0 的根"
+    keywords: [eigenvalue, eigenvector, eigen]
+    sympy: "Matrix.eigenvals() / eigenvects()"
+
+  - id: matrix_rank
+    type: concept
+    name: "矩阵的秩"
+    formal: "rank(A) = 非零行的行阶梯形行数 = 列空间的维数"
+    keywords: [rank, nullity]
+    sympy: "Matrix.rank()"
+
+  - id: vector_operations
+    type: concept
+    name: "向量运算（点积/叉积/模长）"
+    formal: "u·v=Σu_i v_i; |u×v|=|u||v|sinθ; ‖u‖=√(u·u)"
+    keywords: [dot product, cross product, norm, magnitude]
+    sympy: "Matrix.dot() / cross() / norm()"
+
+solution_methods:
+  - id: determinant_solver
+    type: solution_method
+    concept: determinant
+    name: "行列式计算"
+    tool: sympy
+    solver: solve_matrix
+
+  - id: inverse_solver
+    type: solution_method
+    concept: matrix_inverse
+    name: "逆矩阵计算"
+    tool: sympy
+    solver: solve_matrix
+
+  - id: eigen_solver
+    type: solution_method
+    concept: eigenvalues_eigenvectors
+    name: "特征值与特征向量"
+    tool: sympy
+    solver: solve_matrix
+
+  - id: linear_system_solver
+    type: solution_method
+    concept: linear_system
+    name: "线性方程组求解"
+    tool: sympy
+    solver: solve_matrix
+
+  - id: vector_ops_solver
+    type: solution_method
+    concept: vector_operations
+    name: "向量运算"
+    tool: sympy
+    solver: solve_matrix
+
+classification_rules:
+  - priority: 100
+    pattern:
+      text_contains: ["determinant", "det(", "行列式"]
+    maps_to: determinant
+    solver: determinant_solver
+
+  - priority: 95
+    pattern:
+      text_contains: ["eigenvalue", "eigenvector", "特征值", "特征向量"]
+    maps_to: eigenvalues_eigenvectors
+    solver: eigen_solver
+
+  - priority: 90
+    pattern:
+      text_contains: ["inverse", "invert", "逆矩阵"]
+    maps_to: matrix_inverse
+    solver: inverse_solver
+
+  - priority: 85
+    pattern:
+      text_contains: ["solve the system", "linear system", "线性方程组"]
+    maps_to: linear_system
+    solver: linear_system_solver
+
+  - priority: 80
+    pattern:
+      text_contains: ["dot product", "cross product", "点积", "叉积", "norm", "模长"]
+    maps_to: vector_operations
+    solver: vector_ops_solver
+
+  - priority: 70
+    pattern:
+      text_contains: ["transpose", "转置"]
+    maps_to: matrix_operations
+    solver: matrix_operations_solver
+
+  - priority: 60
+    pattern:
+      text_contains: ["rank", "秩"]
+    maps_to: matrix_rank
+    solver: rank_solver
+
+  - priority: 55
+    pattern:
+      text_contains: ["multiply", "product", "矩阵乘积", "矩阵乘法", "乘积",
+                      "add", "a + b", "加法", "相加"]
+    maps_to: matrix_operations
+    solver: matrix_operations_solver
+
+  - priority: 10
+    pattern:
+      text_contains: ["matrix", "矩阵", "pmatrix"]
+    maps_to: matrix_operations
+    solver: matrix_operations_solver

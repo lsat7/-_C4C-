@@ -1,0 +1,23 @@
+{
+  "source_file": "lsa_C4C_作业原件.md",
+  "format": ".md",
+  "raw_text": "# 线性代数 作业三（矩阵与线性方程组）\n\n课程：线性代数（Linear Algebra） ｜ 学生：lsa ｜ 提交日期：2026-10-07\n\n说明：请逐步求解下列各题，给出计算过程与最终答案。\n\n## 第一部分：矩阵运算\n\nProblem 1. 计算矩阵的和 $A + B$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}.$$\n\nProblem 2. 计算矩阵乘积 $AB$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}.$$\n\nProblem 3. 求二阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 3 & 1 \\\\ 4 & 2 \\end{pmatrix}.$$\n\nProblem 4. 求三阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 5 & 6 & 0 \\end{pmatrix}.$$\n\n## 第二部分：逆矩阵与特征值\n\nProblem 5. 求矩阵 $A$ 的逆矩阵 $A^{-1}$，其中\n\n$$A = \\begin{pmatrix} 4 & 7 \\\\ 2 & 6 \\end{pmatrix}.$$\n\nProblem 6. 求矩阵 $A$ 的特征值，其中\n\n$$A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}.$$\n\nProblem 7. 求矩阵 $A$ 的特征值与特征向量，其中\n\n$$A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix}.$$\n\nProblem 8. 求矩阵 $A$ 的转置 $A^T$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}.$$\n\n## 第三部分：线性方程组与向量\n\nProblem 9. 解线性方程组：$x + 2y = 5$，$3x - y = 1$。\n\nProblem 10. 求向量 $u = (1, 2, 3)$ 与 $v = (4, 5, 6)$ 的点积 $u \\cdot v$。\n",
+  "sections": [
+    {
+      "title": "线性代数 作业三（矩阵与线性方程组）",
+      "content": "课程：线性代数（Linear Algebra） ｜ 学生：lsa ｜ 提交日期：2026-10-07\n\n说明：请逐步求解下列各题，给出计算过程与最终答案。"
+    },
+    {
+      "title": "第一部分：矩阵运算",
+      "content": "Problem 1. 计算矩阵的和 $A + B$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}.$$\n\nProblem 2. 计算矩阵乘积 $AB$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}.$$\n\nProblem 3. 求二阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 3 & 1 \\\\ 4 & 2 \\end{pmatrix}.$$\n\nProblem 4. 求三阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 5 & 6 & 0 \\end{pmatrix}.$$"
+    },
+    {
+      "title": "第二部分：逆矩阵与特征值",
+      "content": "Problem 5. 求矩阵 $A$ 的逆矩阵 $A^{-1}$，其中\n\n$$A = \\begin{pmatrix} 4 & 7 \\\\ 2 & 6 \\end{pmatrix}.$$\n\nProblem 6. 求矩阵 $A$ 的特征值，其中\n\n$$A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}.$$\n\nProblem 7. 求矩阵 $A$ 的特征值与特征向量，其中\n\n$$A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix}.$$\n\nProblem 8. 求矩阵 $A$ 的转置 $A^T$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}.$$"
+    },
+    {
+      "title": "第三部分：线性方程组与向量",
+      "content": "Problem 9. 解线性方程组：$x + 2y = 5$，$3x - y = 1$。\n\nProblem 10. 求向量 $u = (1, 2, 3)$ 与 $v = (4, 5, 6)$ 的点积 $u \\cdot v$。"
+    }
+  ]
+}

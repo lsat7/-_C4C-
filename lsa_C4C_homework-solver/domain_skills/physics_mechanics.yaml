@@ -1,0 +1,84 @@
+# ============================================================
+# T-box: University Physics — Mechanics & Electrostatics（大学物理）—— C4C 扩展领域
+# ============================================================
+# Oracle sources:
+#   - Halliday, Resnick & Walker, Fundamentals of Physics, Ch. 2–5, 21
+#
+# 求解实现见 scripts/solvers_extended.py 的 solve_physics。
+# ============================================================
+
+domain: physics_mechanics
+version: "1.0"
+
+oracle_sources:
+  - type: textbook
+    ref: "Halliday, Resnick & Walker, Fundamentals of Physics, 10th ed."
+    authority: primary
+    distilled_knowledge:
+      - "牛顿第二定律: F = ma（力与加速度成正比）"
+      - "库仑定律: F = k·q1·q2 / r²，k = 9×10^9 N·m²/C²"
+      - "自由落体: h = ½ g t²，g ≈ 9.8 m/s²"
+      - "匀加速直线运动: v = v0 + at，s = v0·t + ½ a t²"
+
+concepts:
+  - id: newtons_second_law
+    type: concept
+    name: "牛顿第二定律"
+    formal: "F = ma"
+    keywords: [newton, force, acceleration, 牛顿, 力, 加速度]
+    sympy: "F = m * a"
+
+  - id: coulombs_law
+    type: concept
+    name: "库仑定律"
+    formal: "F = k q1 q2 / r²"
+    keywords: [coulomb, charge, electric force, 库仑, 电荷]
+    sympy: "F = k * q1 * q2 / r**2"
+
+  - id: kinematics
+    type: concept
+    name: "匀加速直线运动 / 自由落体"
+    formal: "h = ½ g t²；v = v0 + at"
+    keywords: [free fall, kinematic, velocity, displacement, 自由落体, 运动]
+    sympy: "t = sqrt(2*h/g)"
+
+solution_methods:
+  - id: newton_solver
+    type: solution_method
+    concept: newtons_second_law
+    name: "牛顿第二定律求解"
+    tool: sympy
+    solver: solve_physics
+
+  - id: coulomb_solver
+    type: solution_method
+    concept: coulombs_law
+    name: "库仑定律求解"
+    tool: sympy
+    solver: solve_physics
+
+  - id: kinematics_solver
+    type: solution_method
+    concept: kinematics
+    name: "匀加速运动求解"
+    tool: sympy
+    solver: solve_physics
+
+classification_rules:
+  - priority: 100
+    pattern:
+      text_contains: ["coulomb", "charge", "electric force", "库仑", "电荷"]
+    maps_to: coulombs_law
+    solver: coulomb_solver
+
+  - priority: 95
+    pattern:
+      text_contains: ["newton", "force", "acceleration", "牛顿", "力", "加速度"]
+    maps_to: newtons_second_law
+    solver: newton_solver
+
+  - priority: 90
+    pattern:
+      text_contains: ["free fall", "kinematic", "velocity", "displacement", "自由落体", "运动"]
+    maps_to: kinematics
+    solver: kinematics_solver

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "text": "求解一阶线性微分方程：$y' + 2y = e^{-x}$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "y' + 2y = e^{-x}"
+      }
+    ],
+    "type": "ode",
+    "sub_problems": []
+  },
+  {
+    "id": "2",
+    "text": "求解二阶常系数齐次微分方程：$y'' + y = 0$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "y'' + y = 0"
+      }
+    ],
+    "type": "ode",
+    "sub_problems": []
+  },
+  {
+    "id": "3",
+    "text": "求解一阶微分方程：$y' + y = x$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "y' + y = x"
+      }
+    ],
+    "type": "ode",
+    "sub_problems": []
+  },
+  {
+    "id": "4",
+    "text": "质量为 $2$ kg 的物体受到 $F = 10$ N 的力，求其加速度 $a$。（牛顿第二定律）",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "2"
+      },
+      {
+        "type": "inline",
+        "latex": "F = 10"
+      },
+      {
+        "type": "inline",
+        "latex": "a"
+      }
+    ],
+    "type": "physics",
+    "sub_problems": []
+  },
+  {
+    "id": "5",
+    "text": "两个点电荷 $q_1 = 2 \\times 10^{-6}$ C 与 $q_2 = 3 \\times 10^{-6}$ C 相距 $r = 0.1$ m，求库仑力 $F$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "q_1 = 2 \\times 10^{-6}"
+      },
+      {
+        "type": "inline",
+        "latex": "q_2 = 3 \\times 10^{-6}"
+      },
+      {
+        "type": "inline",
+        "latex": "r = 0.1"
+      },
+      {
+        "type": "inline",
+        "latex": "F"
+      }
+    ],
+    "type": "physics",
+    "sub_problems": []
+  },
+  {
+    "id": "6",
+    "text": "物体从高度 $h = 20$ m 处自由落体，求落地时间 $t$（取 $g = 9.8$ m/s²）。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "h = 20"
+      },
+      {
+        "type": "inline",
+        "latex": "t"
+      },
+      {
+        "type": "inline",
+        "latex": "g = 9.8"
+      }
+    ],
+    "type": "physics",
+    "sub_problems": []
+  }
+]

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "1",
+    "text": "计算矩阵的和 $A + B$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "A + B"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "2",
+    "text": "计算矩阵乘积 $AB$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad B = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "AB"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "3",
+    "text": "求二阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 3 & 1 \\\\ 4 & 2 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 3 & 1 \\\\ 4 & 2 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "\\det(A)"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "4",
+    "text": "求三阶行列式 $\\det(A)$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 5 & 6 & 0 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 0 & 1 & 4 \\\\ 5 & 6 & 0 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "\\det(A)"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "5",
+    "text": "求矩阵 $A$ 的逆矩阵 $A^{-1}$，其中\n\n$$A = \\begin{pmatrix} 4 & 7 \\\\ 2 & 6 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 4 & 7 \\\\ 2 & 6 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      },
+      {
+        "type": "inline",
+        "latex": "A^{-1}"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "6",
+    "text": "求矩阵 $A$ 的特征值，其中\n\n$$A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "7",
+    "text": "求矩阵 $A$ 的特征值与特征向量，其中\n\n$$A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 1 & 0 \\\\ 0 & 3 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "8",
+    "text": "求矩阵 $A$ 的转置 $A^T$，其中\n\n$$A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}.$$",
+    "math_expressions": [
+      {
+        "type": "display",
+        "latex": "A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}."
+      },
+      {
+        "type": "inline",
+        "latex": "A"
+      },
+      {
+        "type": "inline",
+        "latex": "A^T"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "9",
+    "text": "解线性方程组：$x + 2y = 5$，$3x - y = 1$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "x + 2y = 5"
+      },
+      {
+        "type": "inline",
+        "latex": "3x - y = 1"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  },
+  {
+    "id": "10",
+    "text": "求向量 $u = (1, 2, 3)$ 与 $v = (4, 5, 6)$ 的点积 $u \\cdot v$。",
+    "math_expressions": [
+      {
+        "type": "inline",
+        "latex": "u = (1, 2, 3)"
+      },
+      {
+        "type": "inline",
+        "latex": "v = (4, 5, 6)"
+      },
+      {
+        "type": "inline",
+        "latex": "u \\cdot v"
+      }
+    ],
+    "type": "matrix",
+    "sub_problems": []
+  }
+]

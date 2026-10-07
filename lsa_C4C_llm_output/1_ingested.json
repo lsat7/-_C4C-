@@ -1,0 +1,11 @@
+{
+  "source_file": "llm_reasoning_test.md",
+  "format": ".md",
+  "raw_text": "# 推理类题目测试（国产 LLM 引擎路由验证）\n\n说明：以下为证明/概念题，用于验证流水线把\"SymPy 无法计算\"的题正确路由到\n国产大模型引擎（`llm_solver.py`），并在无 API Key 时确定性降级到离线知识库模板。\n\nProblem 1. 证明：若函数 $f$ 在 $x=a$ 处可导，则 $f$ 在 $x=a$ 处连续。\n\nProblem 2. 证明：$\\sqrt{2}$ 是无理数。\n\nProblem 3. 证明：对任意实数 $a$、$b$，有 $(a+b)^2 = a^2 + 2ab + b^2$。\n",
+  "sections": [
+    {
+      "title": "推理类题目测试（国产 LLM 引擎路由验证）",
+      "content": "说明：以下为证明/概念题，用于验证流水线把\"SymPy 无法计算\"的题正确路由到\n国产大模型引擎（`llm_solver.py`），并在无 API Key 时确定性降级到离线知识库模板。\n\nProblem 1. 证明：若函数 $f$ 在 $x=a$ 处可导，则 $f$ 在 $x=a$ 处连续。\n\nProblem 2. 证明：$\\sqrt{2}$ 是无理数。\n\nProblem 3. 证明：对任意实数 $a$、$b$，有 $(a+b)^2 = a^2 + 2ab + b^2$。"
+    }
+  ]
+}

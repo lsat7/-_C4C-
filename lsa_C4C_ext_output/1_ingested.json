@@ -1,0 +1,19 @@
+{
+  "source_file": "extension_ode_physics.md",
+  "format": ".md",
+  "raw_text": "# 扩展领域测试：微分方程 + 大学物理\n\n说明：本测试用于验证求解器对「微分方程」与「大学物理（力学/电学）」两个扩展领域的支持。\n\n## 微分方程（Differential Equations）\n\nProblem 1. 求解一阶线性微分方程：$y' + 2y = e^{-x}$。\n\nProblem 2. 求解二阶常系数齐次微分方程：$y'' + y = 0$。\n\nProblem 3. 求解一阶微分方程：$y' + y = x$。\n\n## 大学物理（University Physics）\n\nProblem 4. 质量为 $2$ kg 的物体受到 $F = 10$ N 的力，求其加速度 $a$。（牛顿第二定律）\n\nProblem 5. 两个点电荷 $q_1 = 2 \\times 10^{-6}$ C 与 $q_2 = 3 \\times 10^{-6}$ C 相距 $r = 0.1$ m，求库仑力 $F$。\n\nProblem 6. 物体从高度 $h = 20$ m 处自由落体，求落地时间 $t$（取 $g = 9.8$ m/s²）。\n",
+  "sections": [
+    {
+      "title": "扩展领域测试：微分方程 + 大学物理",
+      "content": "说明：本测试用于验证求解器对「微分方程」与「大学物理（力学/电学）」两个扩展领域的支持。"
+    },
+    {
+      "title": "微分方程（Differential Equations）",
+      "content": "Problem 1. 求解一阶线性微分方程：$y' + 2y = e^{-x}$。\n\nProblem 2. 求解二阶常系数齐次微分方程：$y'' + y = 0$。\n\nProblem 3. 求解一阶微分方程：$y' + y = x$。"
+    },
+    {
+      "title": "大学物理（University Physics）",
+      "content": "Problem 4. 质量为 $2$ kg 的物体受到 $F = 10$ N 的力，求其加速度 $a$。（牛顿第二定律）\n\nProblem 5. 两个点电荷 $q_1 = 2 \\times 10^{-6}$ C 与 $q_2 = 3 \\times 10^{-6}$ C 相距 $r = 0.1$ m，求库仑力 $F$。\n\nProblem 6. 物体从高度 $h = 20$ m 处自由落体，求落地时间 $t$（取 $g = 9.8$ m/s²）。"
+    }
+  ]
+}

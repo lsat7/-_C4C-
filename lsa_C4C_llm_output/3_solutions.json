@@ -1,0 +1,54 @@
+[
+  {
+    "problem_id": "1",
+    "problem_text": "证明：若函数 $f$ 在 $x=a$ 处可导，则 $f$ 在 $x=a$ 处连续。",
+    "solved": true,
+    "steps": [
+      "由可导定义：$f'(a) = \\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}$ 存在。",
+      "于是 $\\lim_{x\\to a}[f(x)-f(a)] = \\lim_{x\\to a}\\frac{f(x)-f(a)}{x-a}\\cdot(x-a) = f'(a)\\cdot 0 = 0$。",
+      "故 $\\lim_{x\\to a}f(x)=f(a)$，即 $f$ 在 $x=a$ 处连续。",
+      "反例说明逆命题不成立：$f(x)=|x|$ 在 $x=0$ 连续但不可导（尖点）。"
+    ],
+    "answer": "\\text{可导} \\implies \\text{连续（反之不成立）}",
+    "answer_latex": "\\text{可导} \\implies \\text{连续（反之不成立）}",
+    "solver": "llm_offline",
+    "llm_provider": "qwen",
+    "llm_model": "",
+    "llm_reason": "未设置 Qwen (通义千问) API Key",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "2",
+    "problem_text": "证明：$\\sqrt{2}$ 是无理数。",
+    "solved": true,
+    "steps": [
+      "反证法：设 $\\sqrt{2}=p/q$（$p,q$ 为互素的正整数）。",
+      "平方得 $p^2 = 2q^2$，故 $p^2$ 为偶数，从而 $p$ 为偶数，设 $p=2k$。",
+      "代入得 $4k^2 = 2q^2 \\Rightarrow q^2 = 2k^2$，故 $q$ 也为偶数。",
+      "$p,q$ 都为偶数，与互素矛盾。故 $\\sqrt{2}$ 是无理数。∎"
+    ],
+    "answer": "\\sqrt{2} \\text{ 是无理数}",
+    "answer_latex": "\\sqrt{2} \\text{ 是无理数}",
+    "solver": "llm_offline",
+    "llm_provider": "qwen",
+    "llm_model": "",
+    "llm_reason": "未设置 Qwen (通义千问) API Key",
+    "sub_solutions": []
+  },
+  {
+    "problem_id": "3",
+    "problem_text": "证明：对任意实数 $a$、$b$，有 $(a+b)^2 = a^2 + 2ab + b^2$。",
+    "solved": true,
+    "steps": [
+      "左边展开：$(a+b)^2 = (a+b)(a+b)$。",
+      "分配律：$= a^2 + ab + ba + b^2 = a^2 + 2ab + b^2$。"
+    ],
+    "answer": "(a+b)^2 = a^2 + 2ab + b^2",
+    "answer_latex": "(a+b)^2 = a^2 + 2ab + b^2",
+    "solver": "llm_offline",
+    "llm_provider": "qwen",
+    "llm_model": "",
+    "llm_reason": "未设置 Qwen (通义千问) API Key",
+    "sub_solutions": []
+  }
+]

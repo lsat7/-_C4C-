@@ -1,0 +1,65 @@
+[
+  {
+    "problem_id": "Q1",
+    "type": "limit",
+    "checks": []
+  },
+  {
+    "problem_id": "Q2",
+    "type": "limit",
+    "checks": []
+  },
+  {
+    "problem_id": "Q3",
+    "type": "conceptual",
+    "checks": []
+  },
+  {
+    "problem_id": "Q4",
+    "type": "conceptual",
+    "checks": []
+  },
+  {
+    "problem_id": "P1",
+    "type": "matrix",
+    "checks": [
+      {
+        "check": "eigenvalues",
+        "status": "skip"
+      },
+      {
+        "check": "inverse",
+        "status": "skip"
+      },
+      {
+        "check": "linear_system",
+        "status": "skip"
+      }
+    ]
+  },
+  {
+    "problem_id": "P2",
+    "type": "limit",
+    "checks": []
+  },
+  {
+    "problem_id": "P3",
+    "type": "conceptual",
+    "checks": []
+  },
+  {
+    "problem_id": "AP1",
+    "type": "limit",
+    "checks": []
+  },
+  {
+    "problem_id": "AP2",
+    "type": "limit",
+    "checks": []
+  },
+  {
+    "problem_id": "AP3",
+    "type": "limit",
+    "checks": []
+  }
+]
